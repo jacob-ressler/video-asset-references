@@ -48,6 +48,7 @@ section {
 
 .main table tr th,
 .main table tr td {
+  text-align: left;
   padding: 6px 20px;
 }
 
