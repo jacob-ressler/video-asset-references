@@ -11,14 +11,32 @@ body {
   background-color: #151515;
 }
 
-.main {
+section {
+  padding: 15px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px;
+}
+
+.nav {
+  padding-top: 25px;
+}
+
+.nav a {
+  font-size: 1.3em;
+  color: #434343;
+  background-color: #7aeb7a;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.nav a:hover {
+  background-color: lightgreen;
 }
 
 .main table {

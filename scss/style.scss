@@ -8,16 +8,35 @@
 
 $table-text: #ececec;
 $body-bg: #151515;
-
+$table-data-bg: #434343;
 body {
 	background-color: $body-bg;
 }
 
-.main {
+section {
+	padding: 15px 20px;
 	display: flex;
 	justify-content: center;
-	padding: 20px;
+}
 
+.nav {
+	padding-top: 25px;
+	a {
+		font-size: 1.3em;
+		color: $table-data-bg;
+		background-color: darken(lightgreen, 5);
+		padding: 15px 25px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 10px;
+
+		&:hover {
+			background-color: lightgreen;
+		}
+	}
+}
+
+.main {
 	table {
 		width: 90%;
 		max-width: 700px;
@@ -36,7 +55,7 @@ body {
 				border-bottom: $table-text solid 2px;
 			}
 			td {
-				background-color: #434343;
+				background-color: $table-data-bg;
 				border-bottom: $body-bg solid 2px;
 			}
 		}
