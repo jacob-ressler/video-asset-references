@@ -21,6 +21,23 @@ section {
           justify-content: center;
 }
 
+section p {
+  width: 90%;
+  max-width: 700px;
+  color: lightgrey;
+  text-align: left;
+}
+
+section p a {
+  color: #7aeb7a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section p a:hover {
+  text-decoration: underline;
+}
+
 #nav {
   padding-top: 25px;
 }
