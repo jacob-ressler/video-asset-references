@@ -21,11 +21,11 @@ section {
           justify-content: center;
 }
 
-.nav {
+#nav {
   padding-top: 25px;
 }
 
-.nav a {
+#nav a {
   font-size: 1.3em;
   color: #434343;
   background-color: #7aeb7a;
@@ -35,32 +35,73 @@ section {
   border-radius: 10px;
 }
 
-.nav a:hover {
+#nav a:hover {
   background-color: lightgreen;
 }
 
-.main table {
+#main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main .table-divider {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main table {
   width: 90%;
   max-width: 700px;
   color: #ececec;
   border-collapse: collapse;
 }
 
-.main table tr th,
-.main table tr td {
+#main table tr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 120px 1fr;
+      grid-template-columns: 120px 1fr;
+}
+
+#main table tr a {
+  color: #ececec;
+  text-decoration: none;
+}
+
+#main table tr a:hover {
+  font-weight: 500;
+}
+
+#main table tr a:visited {
+  color: lightsalmon;
+}
+
+#main table tr th,
+#main table tr td {
   text-align: left;
   padding: 6px 20px;
+  border-bottom: #151515 solid 2px;
 }
 
-.main table tr th {
+#main table tr th {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  margin-top: 1em;
   font-size: 1em;
   text-transform: uppercase;
-  background-color: #323232;
-  border-bottom: #ececec solid 2px;
+  background-color: #195ca0;
 }
 
-.main table tr td {
+#main table tr td {
   background-color: #434343;
-  border-bottom: #151515 solid 2px;
 }
 /*# sourceMappingURL=style.css.map */
