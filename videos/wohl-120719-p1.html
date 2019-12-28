@@ -6,26 +6,79 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>VAR | WOHL 12/07/2019 Part 1</title>
 		<link rel="stylesheet" href="../css/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="../js/asset-finder.js"></script>
+		<script>
+			$(document).ready(function() {
+				//console.log('test');
+				getData('wohl-120719-p1');
+			});
+		</script>
 	</head>
 	<body>
-		<section class="nav"><a href="../index.html">Return Home</a></section>
-		<section class="main">
-			<table>
-				<tr>
-					<th>Timestamp</th>
-					<th>Asset</th>
-				</tr>
-				<tr>
-					<td>0:00</td>
-					<td>asset name here</td>
-				</tr>
-				<tr>
-					<td>0:00</td>
-					<td>asset name here</td>
-				</tr>
-			</table>
+		<section id="nav"><a href="../index.html">Return Home</a></section>
+		<section id="main">
+			<div class="table-divider">
+				<table id="images">
+					<tr>
+						<th>Images</th>
+					</tr>
+					<tr>
+						<td>0:00</td>
+						<td>asset name here</td>
+					</tr>
+					<tr>
+						<td>0:00</td>
+						<td>asset name here</td>
+					</tr>
+				</table>
+			</div>
+			<div class="table-divider">
+				<table id="videos">
+					<tr>
+						<th>Videos</th>
+					</tr>
+					<tr>
+						<td>0:00</td>
+						<td>asset name here</td>
+					</tr>
+					<tr>
+						<td>0:00</td>
+						<td>asset name here</td>
+					</tr>
+				</table>
+			</div>
+			<div class="table-divider">
+				<table id="music">
+					<tr>
+						<th>Music</th>
+					</tr>
+					<tr>
+						<td>0:00</td>
+						<td>asset name here</td>
+					</tr>
+					<tr>
+						<td>0:00</td>
+						<td>asset name here</td>
+					</tr>
+				</table>
+			</div>
+			<div class="table-divider">
+				<table id="sfx">
+					<tr>
+						<th>SFX</th>
+					</tr>
+					<tr>
+						<td>0:00</td>
+						<td>asset name here</td>
+					</tr>
+					<tr>
+						<td>0:00</td>
+						<td>asset name here</td>
+					</tr>
+				</table>
+			</div>
 		</section>
-		<section class="footer"></section>
+		<section id="footer"></section>
 	</body>
 </html>
