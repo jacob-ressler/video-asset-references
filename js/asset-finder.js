@@ -44,7 +44,7 @@ function dataToTable(arr) {
 	for (let i = 0; i < arr.length; i++) {
 		const element = arr[i];
 		const time = element.min * 60 + element.sec;
-		str += '<tr><td><a href="' + yturl + '?t=' + time + '">' + element.min + ':';
+		str += '<tr><td><a href="' + yturl + '&t=' + time + '">' + element.min + ':';
 		if (element.sec < 10) {
 			str += '0' + element.sec;
 		} else {
